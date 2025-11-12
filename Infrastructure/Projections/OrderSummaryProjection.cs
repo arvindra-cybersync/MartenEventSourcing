@@ -1,4 +1,5 @@
 ﻿using Domain.Events;
+using Infrastructure.ReadModels;
 using Marten;
 using Marten.Events.Aggregation;
 
@@ -8,7 +9,7 @@ namespace Infrastructure.Projections;
 /// Async projection that builds and maintains an OrderSummary read model from events.
 /// Compatible with Marten 7.x / 8.x.
 /// </summary>
-public class OrderSummaryProjection : SingleStreamProjection<OrderSummary>
+public class OrderSummaryProjection : SingleStreamProjection<OrderSummary, Guid>
 {
     public OrderSummaryProjection()
     {

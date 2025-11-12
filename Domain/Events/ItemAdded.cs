@@ -7,4 +7,5 @@ public class ItemAdded
     public Guid ItemId { get; set; }
     public string Item { get; set; } = string.Empty;
     public int Quantity { get; set; }
+    public DateTime OccurredAt { get; set; }
 }

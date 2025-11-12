@@ -1,4 +1,5 @@
 ﻿using Infrastructure.Projections;
+using Infrastructure.ReadModels;
 using Infrastructure.Repositories;
 using Marten;
 using Microsoft.AspNetCore.Mvc;
